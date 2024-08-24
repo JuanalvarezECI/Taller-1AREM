@@ -1,0 +1,31 @@
+
+7
+pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
+S
+#src/main/java/org/example/Main.java,0\b\0ba1b9c7a4878802f938e331cc2d8a042087ec6b
+Y
+)src/main/java/org/example/Motorcycle.java,a\a\aa98c0ae61fa6fbb63662d9b7f19d62a11f8e17b
+V
+&src/main/java/org/example/Serever.java,c\0\c0effb77fba29d83b0d74fa19f036e07ea64e3bd
+`
+0src/main/java/org/example/StaticFileHandler.java,a\5\a5f594a1f4b61a5b90aa5bbbdd99c65c13b4b3be
+`
+0src/main/java/org/example/MotorcycleHandler.java,d\5\d502f15b9db5366a7b7820d568ad633b69ed5c94
+G
+src/webroot/indexs.html,1\8\18c4e225ae4138d41dfac91af1d403e1f1df8f02
+B
+src/webroot/app.js,c\9\c964789dd95854fb929a1c286077de5a94f3d645
+F
+src/webroot/index.html,5\2\5226a44966d64b491e78e1924464ef0c22fcbc93
+_
+/src/main/java/org/example/SimpleHttpServer.java,c\7\c71af40dc36470626d0d4a603335b0d7113ce640
+F
+src/webroot/styles.css,6\6\66adf5e1bbf229a836b056efae26da3b3b3702ee
+K
+src/test/java/App/Test.java,7\2\72ecceb6ca884c94cd405b56795d2e7959ee32c1
+J
+src/test/java/AppTest.java,4\8\4854b134db85895899e9484d1c787081027b6d5d
+9
+	Readme.dw,7\3\737043ad97b8fe92daad9b7e7b23ec8371054289
+9
+	Readme.md,0\c\0c1945d7443c2e154bd3e421c0d438bd4086d8c3
