@@ -2,7 +2,7 @@
 
 Este aplicativo web está diseñado para simular un servidor HTTP capaz de gestionar solicitudes GET, POST y DELETE. El servidor opera en el puerto 8080 y ofrece la funcionalidad de una lista de compras, permitiendo agregar alimentos, editar sus nombres, eliminarlos y reordenarlos según su prioridad.
 
-![img_1.png](src/main/resources/img.png)
+![img_1.png](src/main/resources/img_1.png)
 
 # Instrucciones
 
@@ -31,7 +31,7 @@ Ejecuta las pruebas automaticas al instalar el artefacto con mvn o con el comand
 mvn test
 ```
 
-![img.png](src/main/resources/img_1.png)
+![img.png](src/main/resources/img.png)
 
 Los test están diseñados para probar el método handleRequest de la clase SimpleHttpServer para diferentes tipos de solicitudes HTTP: GET, POST y DELETE. Aquí está lo que hace cada test:  
 
