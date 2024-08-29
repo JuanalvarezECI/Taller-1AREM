@@ -2,8 +2,15 @@
 
 Este aplicativo web está diseñado para simular un servidor HTTP capaz de gestionar solicitudes GET, POST y DELETE. El servidor opera en el puerto 8080 y ofrece la funcionalidad de una lista de compras, permitiendo agregar alimentos, editar sus nombres, eliminarlos y reordenarlos según su prioridad.
 
-![img_1.png](C:\Users\Juan\Downloads\Taller-1AREM\src\main\resources\img_1.png)
+![img_1.png](src/main/resources/img_1.png)
+# Arquitectura
+El proyecto tiene una arquitectura Cliente-Servidor con los siguientes componentes:
 
+1. Cliente: El cliente es una aplicación web construida con HTML, CSS y JavaScript. El código del cliente se encuentra en el directorio src/webroot. El archivo index.html es la página principal de la aplicación, y app.js contiene el código JavaScript que maneja la interactividad de la página. Los archivos estáticos (como imágenes y CSS) también se sirven desde este directorio.  
+2. Servidor: El servidor es una aplicación Java que maneja las solicitudes HTTP de manera concurrente. El código del servidor se encuentra en el directorio src/main/java/org/example. La clase SimpleHttpServer es el punto de entrada principal del servidor. Esta clase inicia un servidor HTTP en el puerto 8080 y maneja las solicitudes GET, POST y DELETE en hilos separados, permitiendo así el manejo concurrente de múltiples solicitudes.  
+3. Construcción y despliegue: El proyecto utiliza Maven para la construcción y el despliegue. Los archivos en src/main/resources se incluyen en el classpath de la aplicación durante la fase de compilación de Maven.
+
+En términos de patrones de diseño, el servidor ahora sigue el patrón de diseño multihilo, donde cada solicitud HTTP entrante se maneja en su propio hilo, permitiendo así el procesamiento concurrente de múltiples solicitudes.
 # Instrucciones
 
 Este documento proporciona instrucciones paso a paso para instalar y ejecutar el programa.
@@ -31,7 +38,7 @@ Ejecuta las pruebas automaticas al instalar el artefacto con mvn o con el comand
 mvn test
 ```
 
-![img.png](C:\Users\Juan\Downloads\Taller-1AREM\src\main\resources\img.png)
+![img.png](src/main/resources/img.png)
 
 Los test están diseñados para probar el método handleRequest de la clase SimpleHttpServer para diferentes tipos de solicitudes HTTP: GET, POST y DELETE. Aquí está lo que hace cada test:  
 

@@ -7,8 +7,13 @@ body {
     height: 100vh;
     margin: 0;
     padding: 0;
+    flex-direction: column;
+    justify-content: center;
 }
-
+#logo {
+    width: 200px; /* Ajusta el tamaño de la imagen según tus necesidades */
+    margin-bottom: 20px; /* Añade un margen en la parte inferior para separar la imagen de la tabla */
+}
 #notebook {
     width: 600px;
     height: 800px;

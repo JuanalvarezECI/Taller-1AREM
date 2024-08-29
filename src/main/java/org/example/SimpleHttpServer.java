@@ -31,9 +31,20 @@ public class SimpleHttpServer {
     public void start() {
         try (ServerSocket serverSocket = new ServerSocket(port)) {
             while (true) {
-                try (Socket socket = serverSocket.accept()) {
-                    handleRequest(socket);
-                }
+                Socket socket = serverSocket.accept();
+                new Thread(() -> {
+                    try {
+                        handleRequest(socket);
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    } finally {
+                        try {
+                            socket.close();
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                }).start();
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -63,6 +74,7 @@ public class SimpleHttpServer {
                 }
 
                 Path path = Paths.get(filePath);
+
                 if (Files.exists(path)) {
                     byte[] data = Files.readAllBytes(path);
                     out.println("HTTP/1.1 200 OK");
