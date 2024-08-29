@@ -22,7 +22,7 @@ Este documento proporciona instrucciones paso a paso para instalar y ejecutar el
 3. Ejecuta el siguiente comando para clonar el repositorio:
 
 ```bash
-git clone https://github.com/username/repository.git
+git clone https://github.com/JuanalvarezECI/Taller-1AREM.git
 ```
 4. Abre el directorio del repositorio clonado en tu IDE favorito.
 5. Dentro de tu IDE favorito ejecuta el siguiente comando para instalar el proyecto:
